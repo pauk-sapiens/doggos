@@ -1,0 +1,283 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Background wallpaper */
+.wallpaper-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.wallpaper-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hero section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Overlay card */
+.overlay {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Content inside overlay */
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Upload form styles */
+.upload-form {
+  margin-bottom: 25px;
+}
+
+/* Container for file upload */
+.upload-wrapper {
+  margin-bottom: 20px;
+}
+
+.file-drop-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* File drop area */
+.file-drop-area {
+  border: 2px dashed #999;
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: border-color 0.2s, background-color 0.2s;
+  text-align: center;
+  display: block;
+  min-height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-drop-area:hover,
+.file-drop-area.highlight {
+  border-color: #007bff;
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+.drop-instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.drop-text {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.browse-text {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+#file-upload {
+  display: none;
+}
+
+/* Preview container */
+.preview-container {
+  display: none; /* Hidden by default */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+}
+
+.preview-container.active {
+  display: block;
+}
+
+#image-preview {
+  max-width: 100%;
+  max-height: 250px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.remove-image {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.remove-image:hover {
+  background-color: #ff3b30;
+  color: white;
+  border-color: #ff3b30;
+}
+
+/* Submit button container */
+.submit-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #3f00ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Results section */
+.results {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.results h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Result images container */
+.result-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.result-images .image-container {
+  flex: 1 1 45%;
+  margin: 10px;
+  text-align: center;
+}
+
+.result-images .image-container h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.result-images .image-container img {
+  max-width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Result details container */
+.result-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.breed-description,
+.top-probabilities {
+  flex: 1 1 45%;
+}
+
+.breed-description h3,
+.top-probabilities h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.prediction-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.prediction-list li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .result-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .result-images .image-container {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+  .result-details {
+    flex-direction: column;
+  }
+  .breed-description,
+  .top-probabilities {
+    flex: 1 1 100%;
+  }
+}
+
