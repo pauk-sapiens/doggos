@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43dd16a1-d6b6-442e-aabe-10edfc5b6299" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/model_prod.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front.py" beforeDir="false" afterPath="$PROJECT_DIR$/front.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,19 +34,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.12.executor": "Run",
-    "Python.analyzer.executor": "Run",
-    "Python.front.executor": "Run",
-    "Python.json.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.test.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/honored_one/PycharmProjects/doggos"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.analyzer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.front.executor&quot;: &quot;Run&quot;,
+    &quot;Python.json.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;refactoring&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/honored_one/PycharmProjects/doggos&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\honored_one\PycharmProjects\doggos" />
@@ -58,7 +58,7 @@
       <recent name="C:\Users\honored_one\PycharmProjects\doggos" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.front">
     <configuration name="12" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="doggos" />
       <option name="ENV_FILES" value="" />
@@ -149,9 +149,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.front" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.12" />
-        <item itemvalue="Python.front" />
         <item itemvalue="Python.analyzer" />
       </list>
     </recent_temporary>
